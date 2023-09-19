@@ -1,4 +1,10 @@
+import { createApp } from 'vue'
+import App from './App.vue'
 
+const app = createApp({
+  /* root component options */
+
+})
 <script setup>
 import {ref} from 'vue'
 import { reactive } from 'vue'
