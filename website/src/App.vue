@@ -1,16 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-const app = createApp({
-  /* root component options */
-
-})
 <script setup>
-import {ref} from 'vue'
-import { reactive } from 'vue'
-
-const x = 0
-const y = 0
+var x = 0 
+var y = 0
 function moverandom(){
     x = Math.floor(Math.random() * 1000);
     y = Math.floor(Math.random() * 1000);
@@ -23,7 +13,21 @@ img.style.top = y+'px';
 </script>
 
 <template>
+  
+  <body>
     <div @click="moverandom" id = "xenoimage">
         <a href="Xeno.gif"></a>
     </div>
+  </body>
 </template>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
