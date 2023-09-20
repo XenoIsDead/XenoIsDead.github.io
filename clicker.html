@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <title>CLICK FISH</title>
+    </head>
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          }
+        }
+      </script>
+      <script type="module">
+        import { createApp, ref } from 'vue'
+        createApp({
+          data() {
+            return{ 
+                count: 0
+            }
+          }
+        }).mount('#increment')
+      </script>
+    <body>
+        <div id = "increment">
+        <button @click="count++">
+            <img src = "Xeno.gif">
+       </button>
+       <h3>You've clicked {{ count }} times!</h3>
+    </div>
+    </body>
+    <style>
+        #increment {
+          font-family: 'Times New Roman', Times, serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-align: center;
+          color: #4c2c50;
+          margin-top: 40px;
+          margin-bottom: 20px;
+        }
+    </style>
+</html>
